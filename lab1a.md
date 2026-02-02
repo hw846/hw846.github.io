@@ -77,3 +77,5 @@ This code uses a range of values to ensure that slight noise disturbance doesn't
 
 Also fun fact, the notes identified are the first three notes used in [Undertale's Megalovania](https://www.youtube.com/watch?v=0FCvzsVlXpQ&list=RD0FCvzsVlXpQ&start_radio=1) (hence the comment readouts).
 [back](./)
+
+## Lab 1a Writeup
