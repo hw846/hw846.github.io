@@ -3,7 +3,7 @@ layout: default
 ---
 # Lab 1 Overview:
 In this lab, I explore how to both set-up & use a SparkFun RedBoard Artemis Nano (or Artemis henceforth). In this, I go through the device's setup and basic features in 1a and explore the limits of wireless connection in 1b. Written below are my details behind both sections, and more info on the Artmeis can be found [here](https://learn.sparkfun.com/tutorials/hookup-guide-for-the-sparkfun-redboard-artemis-nano/all). All work was done on a 2020 M1 Macbook. 
-```Final Wordcount: ???```
+```Final Wordcount: 987```
 
 ## Lab 1a Writeup
 
@@ -48,7 +48,7 @@ Finally, to confirm that my Artmeis' microphone worked I uploaded and tested the
 </div>>
 
 #### Graduate Extra: Three Note Tuner
-Given that I am a graduate student, I was additionally tasked with combining the microphone sketch & Serial sketch to create a three note tuner. To do this, I utilized the previous "PDM" sketch and played three different notes "D", "A", and "G" from an online tuner to find the frequency the device read these notes as. From there I plugged these values in as conditionals into the base PDM sketch to get my tuner to work!
+Given that I am a graduate student, I was additionally tasked with combining the microphone sketch & Serial sketch to create a three note tuner. To do this, I utilized the previous "PDM" sketch and played three different notes "D", "A", and "G" from an online tuner to find the frequency. From there I plugged these values in as conditionals into the base PDM sketch!
 ```c++
 if (ui32LoudestFrequency > 580 && ui32LoudestFrequency < 586)
   {
@@ -67,7 +67,7 @@ if (ui32LoudestFrequency > 580 && ui32LoudestFrequency < 586)
     Serial.printf("Not Megalovania (Tuned Note), tuned note:%d         \n", ui32LoudestFrequency);
   }
 ```
-This code uses a range of values to ensure that slight noise disturbance doesn't affect its ability to read the value. The video below shows this program working!
+This code uses a range of values to ensure that  noise disturbance doesn't affect its ability. The video below shows this program working!
 
 <div style="text-align: center;">
   <video width="640" height="480" controls>
@@ -80,23 +80,23 @@ Also fun fact, the notes identified are the first three notes used in [Undertale
 ## Lab 1b Writeup
 
 #### Pre-Lab
-For this pre-lab, I had issues switching python versions due to my Mac having python 3.14 installed already. After reconfiguring my device as shown, I went ahead and installed and set-up my virtual environment.
+For this pre-lab, I had issues switching python versions due to my Mac having python 3.14 installed already. After reconfiguring my device as shown, I went installed and set-up my virtual environment.
 
 ![1a_0a_Image](figures/1_lab/1b_0a.png)
 
 With the virtual environment setup and sourced, I installed the necessary python packages and could now access the jupyter notebook locally using ```jupyter lab``` in terminal to write code with it!
 ![1a_0c_Image](figures/1_lab/1b_0c.png)
 
-Looking at this codebase, it is a mixture of Python and Arduino functions that handle connecting to, commanding, and passing information/data between the Artemis and your PC. This passing is down using BLE (Bluetooth Low Energy) in order to facilitate low power use data transfer (albeit with smaller data rates).
+Looking at this codebase, it is a mixture of Python and Arduino functions that handle connecting to, commanding, and passing information/data between the Artemis and your PC. This passing is down using BLE (Bluetooth Low Energy) in order to facilitate low power use data transfer with with smaller data rates.
 
-For the Artemis itself, the data follows a similar structure to ROS where the Artemis acts as a Publisher ("notifier" in this instance) and the PC as a subscriber ("notifiee"). In this, the PC uses a notifcation function that subscribes to data the Artemis pushes out thus allowing data and commands to be sent between one another. As shown later, BLE messages are limited to 150bytes (i.e. 150 characters for the String messages)
+For the Artemis itself, the data follows a similar structure to ROS where the Artemis acts as a Publisher ("notifier" in this instance) and the PC as a subscriber ("notifiee"). In this, the PC uses a notifcation function that subscribes to data the Artemis pushes out thus allowing data and commands to be sent between one another. As shown later, BLE messages are limited to 150bytes.
 
 #### Configuration
 To allow my Artemis to wirelessly connect and send/receieve data from my PC, I needed to configure it to my Mac. After installing the ArduinoBLE, I found my artemis' MAC address & BLE Service UUID (from the given ```ble_arduino.ino``` sketch and ```uuid4()``` command respectively) and updated this in the codebase's BlE service. 
 
 ![1a_0c_Image](figures/1_lab/1b_0d.png)
 
-Following this, my Artemis was able  to advertise its MAC correctly and my PC was able to connect to it:
+Following this, my Artemis was able to advertise its MAC correctly and my PC could connect:
 
 ![1a_0c_Image](figures/1_lab/1b_0e.png)
 
@@ -299,7 +299,7 @@ Using the framework of ```SEND_TIME_DATA```, I created a secondary global array 
 float temp_tracker[max_samples];
 ```
 
-With this, anotiher loop was generated to write down both time & temperature after pulling data from the ADCPUN
+With this, anotiher loop was generated to write down both time & temperature after pulling data from the ADCPIN:
 ```c++
 case GET_TEMP_READINGS: {
     int time_count = 0;
