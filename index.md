@@ -8,8 +8,6 @@ My name is Hayden Webb, and I am a PhD student obtaining a PhD in Robotics with 
 
 At Rice, I served as a Robotics Research Assistant in the RobotPi Lab under the direction of Dr. Kaiyu Hang, publishing one first-author paper and acquiring a supplementary patent. Additionally, I have worked for both the Rice University Mechanical Engineering Department and Rice University Oshman Engineering Design Kitchen as a Teaching Assistant to further promote and teach Engineering in the Rice undergraduate & graduate community.
 
-###### Header 6
-
 | Lab Number        | Page Link     
 |:-------------|:------------------|
 | Lab 1      | [Link](./lab1.html) |
@@ -24,7 +22,5 @@ At Rice, I served as a Robotics Research Assistant in the RobotPi Lab under the 
 | Lab 10      | N/A  |
 | Lab 11      | N/A  |
 | Lab 12      | N/A  |
-
-
 
 ![Image](assets/images/Headshot_Hayden_Webb.jpg)
