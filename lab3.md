@@ -54,7 +54,7 @@ Given the geomeotry of the robot, I will most likely need to resolder one TOF's 
 #### Task 5: TOF I2C Scanning
 Using the ```Wire_I2C``` sketch given (```File->Examples->Apollo3->Wire```), I called the connected IMU sensor and found that the I2C address that was being broadcast was ```0x29``` as shown:
 
-![3_5a_Image](figures/3_lab/3_5a.jpg)
+![3_5a_Image](figures/3_lab/3_5a.png)
 
 This was surprising as, per the manual, it should be advertising ```0x52```. This is similar to the IMU's I2C bit address issue where the last bit used for reading/writing and is dropped in the address send over. Thus, in binary, the original ```110100``` becomes ```11101``` in the readout.
 
@@ -169,7 +169,12 @@ ble.send_command(CMD.TOF_IMU_DATA, "")
 
 The video showing this whole process from sending the command, sensor movements, and data parsing can be found here:
 
-[![3_10c](https://img.youtube.com/vi/KoZSgkPxAiQ)](https://youtu.be/KoZSgkPxAiQ)
+<iframe width="560" height="315"
+src="https://youtu.be/KoZSgkPxAiQ"
+title="TOF Demo"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
 #### Task Graduate: Infrared Sensor Discussion
 When looking at other distance sensors, the two most prominent examples are both LIDAR & IR. Rather than sending out a contiuous infrared wave in TOF's cases, LIDAR works by sending out laser-light pulses and measuring their time returned & IR measures the intensity of reflected light. While LIDAR has a much higher resolution & distance measurements, LIDAR sensors themselves are very expensive in comparison to TOF and require a much larger power draw. On the other hand, IR sensors are considerably cheaper than TOF with lower power, but at the cost of a lower resolution and weakness to object color/texture. Thus, when choosing a distance sensor, its impotant to know the resolution requirements & power constraints.
