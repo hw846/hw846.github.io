@@ -73,7 +73,7 @@ Additionally, I drilled holes into the original battery carrier so I could hold 
 #### Task 6/7: Dual Motor Running & Car Assembly
 With the car now ready for installation, I soldered my 2nd motor driver together (```A2``` and ```A3``` on my board) and began testing out the car's bare minimum movement. Shown below is the "final" installation of the car (Note: the IMU/TOF sensors are very loosely installed, I plan to 3D print holders that connect to the existing screw holes so they can be more permanently attached). 
 
-![4_6aImage](figures/4_lab/4_6a.png)
+![4_6aImage](figures/4_lab/4_6c.png)
 
 Now with everything installed, I ran a basic run/stop function using ```AnalogWrite()```'s on my Artemis and tested it:
 ```c++
