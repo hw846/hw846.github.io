@@ -199,8 +199,7 @@ To prevent integrator wind-up, the integral term was only updated when the contr
 if (abs(PWM) < 255) { POS_I_INT = POS_I_INT + POS_error*POS_dt; }
 ```
 
-This prevents large accumulated error when disturbances occur, such as wheels catching on the floor or changes in surface friction. With this protection, the robot maintained stable behavior across different surfaces.
-
+This prevents large accumulated error when disturbances occur, such as wheels catching on the floor or changes in surface friction. With this protection, the robot maintained stable behavior across different surfaces (from the wood & vinyl alredy given) as shown:
 Tile:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
