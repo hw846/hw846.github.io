@@ -175,6 +175,7 @@ title="TOF & IMU Demo"
 frameborder="0"
 allowfullscreen>
 </iframe>
+
 #### Task Graduate: Infrared Sensor Discussion
 When looking at other distance sensors, the two most prominent examples are both LIDAR & IR. Rather than sending out a contiuous infrared wave in TOF's cases, LIDAR works by sending out laser-light pulses and measuring their time returned & IR measures the intensity of reflected light. While LIDAR has a much higher resolution & distance measurements, LIDAR sensors themselves are very expensive in comparison to TOF and require a much larger power draw. On the other hand, IR sensors are considerably cheaper than TOF with lower power, but at the cost of a lower resolution and weakness to object color/texture. Thus, when choosing a distance sensor, its impotant to know the resolution requirements & power constraints.
 
