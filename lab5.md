@@ -201,14 +201,14 @@ if (abs(PWM) < 255) { POS_I_INT = POS_I_INT + POS_error*POS_dt; }
 
 This prevents large accumulated error when disturbances occur, such as wheels catching on the floor or changes in surface friction. With this protection, the robot maintained stable behavior across different surfaces.
 
-Wood:
+Tile:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/5_lab/5_ga.mp4" type="video/mp4">
   </video>
 </div>
 
-Tile:
+Laminate:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/5_lab/5_gc.mp4" type="video/mp4">
