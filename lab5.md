@@ -148,7 +148,7 @@ An integral term was added to reduce steady-state error by accumulating past err
 ```c++
 POS_I_INT = POS_I_INT + POS_error*POS_dt;
 POS_I = Ki * POS_I_INT;
-PWM = POS_P + POS_I + POS_D;
+PWM = POS_P + POS_I;
 ```
 
 Through experimentation, **Ki = 0.0005** produced stable behavior. Larger values caused the integral term to accumulate too quickly, resulting in aggressive motion toward the wall. With the integral term added, the system showed larger oscillation but improved settling as shown:
