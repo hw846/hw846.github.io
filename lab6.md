@@ -5,7 +5,7 @@ layout: default
 # Lab 6 Overview:
 In this lab, I implement PID control in my robot system for Reorientation and analyze how rotation control can be achieved using an IMU gyroscope's feedback.
 
-```Final Wordcount: 853``` (Extra due to Graduate Tasks)
+```Final Wordcount: 872``` (Extra due to Graduate Tasks)
 
 #### Pre-Lab
 The pre-lab focused on improving the bluetooth data pipeline implemented in previous labs (See ```Lab1/2```). For my implementation, I've been using the following prompt to set-up, connect, and read data over BLE.
