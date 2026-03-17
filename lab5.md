@@ -185,9 +185,11 @@ Overall, the PID controller provided the most robust and responsive performance 
 To further improve responsiveness, linear extrapolation was used to estimate the robot’s distance between ToF updates. Using the last two measurements, a slope is calculated and used to estimate the current position so that control updates can run at the faster loop rate (~280 Hz):
 
 ```c++
+.. //Check if ToF isnt ready
 slope = (TOF_F_tracker[time_count-1] - TOF_F_tracker[time_count-2]) /
 (time_tracker[time_count-1] - time_tracker[time_count-2]);
 dist = TOF_F_tracker[time_count-1] + slope * (POS_dt*1000);
+TOF_F_tracker[time_count] = dist;
 ```
 
 Becasue my PID values were pretty tuned, the affect of this extrapolation was pretty minimal (i.e. with/without using PID had no realistic difference). Regardless, video results for this implementation are shown in the Graduate Task.
