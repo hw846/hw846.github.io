@@ -285,6 +285,12 @@ If my ```Kd>0.3``` my system would be experience some derivative kick and begin 
 
  #### Task 5: Setpoint Change
  To demonstrate that my system can robustly react to different setpoints with no problem, I have compiled the video below showing the robot using 0°, 90°, and -90° as a setpoint rapidly:
+
+ <div style="text-align: center;">
+  <video width="640" height="480" controls>
+    <source src="/figures/6_lab/6_5a.mp4" type="video/mp4">
+  </video>
+</div>
  
 
 #### Graduate Task: Integrator Wind-up Protection
@@ -298,14 +304,25 @@ Without this protection, the integral term can accumulate excessively when the m
 
 Shown below is the robot reorienting on various surfaces to demonstrate its capability (using ```Task 3's PI Controller```)
 Tile:
-
+<div style="text-align: center;">
+  <video width="640" height="480" controls>
+    <source src="/figures/6_lab/6_ga.mp4" type="video/mp4">
+  </video>
+</div>
 
 Wood:
-
+<div style="text-align: center;">
+  <video width="640" height="480" controls>
+    <source src="/figures/6_lab/6_gb.mp4" type="video/mp4">
+  </video>
+</div>
 
 Laminate:
-
-[back](./)
+<div style="text-align: center;">
+  <video width="640" height="480" controls>
+    <source src="/figures/6_lab/6_gc.mp4" type="video/mp4">
+  </video>
+</div>
 
 
 ## Discussion
