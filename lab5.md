@@ -190,23 +190,23 @@ slope = (TOF_F_tracker[time_count-1] - TOF_F_tracker[time_count-2]) /
 dist = TOF_F_tracker[time_count-1] + slope * (POS_dt*1000);
 ```
 
-Video results for this implementation are shown in the Graduate Task.
+Becasue my PID values were pretty tuned, the affect of this extrapolation was pretty minimal (i.e. with/without using PID had no realistic difference). Regardless, video results for this implementation are shown in the Graduate Task.
 
 #### Graduate Task: Integrator Wind-up Protection
-To prevent integrator wind-up, the integral term was only updated when the control output was not saturated:
+To prevent integrator wind-up, the integral term was only updated when the control output was not saturated (i.e. not running currently):
 
 ```c++
 if (abs(PWM) < 255) { POS_I_INT = POS_I_INT + POS_error*POS_dt; }
 ```
 
-This prevents large accumulated error when disturbances occur, such as wheels catching on the floor or changes in surface friction. With this protection, the robot maintained stable behavior across different surfaces (from the wood & vinyl alredy given) as shown:
+This prevents large accumulated error when disturbances occur, such as wheels catching on the floor or changes in surface friction. With this protection, the robot maintained stable behavior across different surfaces (in addition to the wood & vinyl alredy shown previously) as shown:
+
 Tile:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/5_lab/5_ga.mp4" type="video/mp4">
   </video>
 </div>
-
 Laminate:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
