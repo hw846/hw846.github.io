@@ -306,21 +306,21 @@ Shown below is the robot reorienting on various surfaces to demonstrate its capa
 Tile:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
-    <source src="/figures/6_lab/6_ga.mp4" type="video/mp4">
+    <source src="/figures/6_lab/6_6a.mp4" type="video/mp4">
   </video>
 </div>
 
 Wood:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
-    <source src="/figures/6_lab/6_gb.mp4" type="video/mp4">
+    <source src="/figures/6_lab/6_6b.mp4" type="video/mp4">
   </video>
 </div>
 
 Laminate:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
-    <source src="/figures/6_lab/6_gc.mp4" type="video/mp4">
+    <source src="/figures/6_lab/6_6c.mp4" type="video/mp4">
   </video>
 </div>
 
