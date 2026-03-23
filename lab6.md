@@ -321,6 +321,6 @@ Laminate:
 
 
 ## Discussion
-In this lab I implemented and tuned PID control for orientation regulation using IMU gyroscope feedback. After resolving issues with frayed wires shorting my motors (again) and DMP irregularities, I was able to get my code working appropriately. This control framework will be used in future labs to move around open spaces!
+In this lab I implemented and tuned PID control for orientation regulation using IMU gyroscope feedback. After resolving issues with frayed wires shorting my motor drivers (again) and DMP irregularities, I was able to get my code working appropriately. This control framework will be used in future labs to move around open spaces!
 
 [back](./)
