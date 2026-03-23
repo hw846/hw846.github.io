@@ -222,7 +222,6 @@ Same as in the previous lab, P was defined as:
 POS_P = Kp * POS_error;
 ```
 where ```PWM = POS_P```. After some time spent tuning, I ultimately found a P value of ```0.5``` to work sufficiently. Shown below is the video & output for my P Controller:
-
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/6_lab/6_2a.mp4" type="video/mp4">
@@ -243,7 +242,6 @@ PWM = POS_P + POS_I;
 ```
 
 After some more work tuning, I found ```Ki=0.06``` to be a decent balance of driving force without significant overshoot or large lead time. Shown below are these results:
-
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/6_lab/6_3a.mp4" type="video/mp4">
@@ -266,7 +264,6 @@ PWM = POS_P + POS_I + POS_D;
 ```
 
 However, when I implemented this above code with a range of Kd values I found the following issue (shown in this video):
-
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/6_lab/6_4a.mp4" type="video/mp4">
@@ -274,7 +271,6 @@ However, when I implemented this above code with a range of Kd values I found th
 </div>
 
 If my ```Kd>0.3``` my system would be experience some derivative kick and begin oscillating/vibrating frequently in odd, jerk-y motions. However, for ```Kd<0.3``` the derivative would fall flat and no movement would occur as shown:
-
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/6_lab/6_4c.mp4" type="video/mp4">
@@ -283,15 +279,14 @@ If my ```Kd>0.3``` my system would be experience some derivative kick and begin 
 
  I attempted tuning my LPF's alpha value, and the same issue would occur for varying Kd thresholds (Most likely due to my Kd pushing the system into instability). Thus, with this issue arising & my PI Controller working well, I've chosen to use PI Control for the foreseeable future.
 
+
  #### Task 5: Setpoint Change
  To demonstrate that my system can robustly react to different setpoints with no problem, I have compiled the video below showing the robot using 0°, 90°, and -90° as a setpoint rapidly:
-
  <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/6_lab/6_5a.mp4" type="video/mp4">
   </video>
 </div>
- 
 
 #### Graduate Task: Integrator Wind-up Protection
 To prevent integrator wind-up, the integral term was only accumulated when the controller output was not saturated (as done in the previous lab):
