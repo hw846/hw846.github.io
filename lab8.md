@@ -7,7 +7,7 @@ In this lab, I learned how to complete a full stunt using everything I've learne
 
 (One week extension used - One remains)
 
-```Final Wordcount: XXX```
+```Final Wordcount: 678```
 
 #### Task B: Drift
 For this lab, I decided to go with the the ```Drift``` option in tasks. I believed it would be "easier" (famous last words) to implement and required the least modifcations to my car. 
@@ -67,7 +67,7 @@ break;
 // Lab 5 Extrapolation Code
 ```
 
-I also knew I wanted to ignore noise as much as possible. To do so, I kept my Lab 5's Low Pass Filter with an added debounce trigger (because my ToF kept glitching and reading both 0 and max randomly) to ensure my signal would be true when the condition was met.
+I also knew I wanted to ignore noise as much as possible. To do so, I kept my ```Lab 5's``` Low Pass Filter with an added debounce trigger (because my ToF kept glitching and reading both 0 and max randomly) to ensure my signal would be true when the condition was met. Additionally, I chose 1500mm (1.5m) as my goal distance due to my ToF sensors poor readings (most likely due to repeated wall bashings).
 
 Now that my car was able to successfully reach a goal rapidly, I needed to imlement my rapid turn. To do so, I adopted ```Lab 6's``` ROT_CTRL framework to quickly drift the car. Pulling the DMP yaw as my observer with a LPF (see ```Lab 6```) and integral windup protector, I used the following as my implementation:
 
