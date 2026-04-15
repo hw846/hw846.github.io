@@ -18,7 +18,7 @@ At Rice, I served as a Robotics Research Assistant in the RobotPi Lab under the 
 | Lab 6       | [Link](./lab6.html) |
 | Lab 7       | [Link](./lab7.html) |
 | Lab 8       | [Link](./lab8.html) |
-| Lab 9       | N/A  |
+| Lab 9       | [Link](./lab9.html) |
 | Lab 10      | N/A  |
 | Lab 11      | N/A  |
 | Lab 12      | N/A  |
