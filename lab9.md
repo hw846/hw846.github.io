@@ -154,27 +154,12 @@ While the front sensor was nominally correct, the right sensor seemed to have a 
 #### Convert to Line-Based Map
 Finally, to convert between the given polar coordinates and a world frame I created a Transformation Matrices to do so. Pulling from ```Lecture 2```, I defined my matrix as thus where T is the homogenous transformation matrices and P is the conversion from the ToF's frame to the global frame via T:
 
-$$
-T(\theta, x_r, y_r) =
-\begin{bmatrix}
-\cos\theta & -\sin\theta & x_r \\
-\sin\theta & \cos\theta  & y_r \\
-0          & 0           & 1
-\end{bmatrix}
-$$
+![9_c0_Image](figures/9_lab/9_c0.png)
 
-$$
-P_{\text{world}} =
-T \cdot
-\begin{bmatrix}
-d + \text{0.09} \\
-0 \\
-1
-\end{bmatrix}
-$$
 
 Using this conversion for the front sensor, I was able to generate this view of the world and the estimated position of the wall:
 
+![9_c1_Image](figures/9_lab/9_c1.png)
 ![9_c2_Image](figures/9_lab/9_c2.png)
 
 I believe that with some retuning of the ToF control (i.e. LPF) and several reruns this data set could be more accurate to the world environment. Much of the noise came from lowered ToF sensors and inaccurate readings (hence several points are short or nowhere near the ground truth). Reruns taking more data with averages would make this system more accurately match the true environment.
