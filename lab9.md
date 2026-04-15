@@ -128,7 +128,7 @@ With this implemented and ready, I moved towards the testing. After spending som
 
 And here are the polar outputs from that turn on the lab table:
 
-![9_a1_Image](figures/9_lab/9_a1.png)
+![9_a1_Image](figures/9_lab/9_1a.png)
 
 After validitaing this movement and confirming its capabilities, I moved to test in the lab environment. Shown below is the only data I got from having my car move in 90 degree increments at (5,3):
 
