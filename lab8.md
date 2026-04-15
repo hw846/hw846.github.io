@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Lab 7 Overview:
+# Lab 8 Overview:
 In this lab, I learned how to complete a full stunt using everything I've learned in Lab's 1-6!
 
 (One week extension used - One remains)
