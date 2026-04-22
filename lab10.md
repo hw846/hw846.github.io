@@ -86,7 +86,6 @@ def update_step():
 ## Simulation Results
 Running the preplanned trajectory, the raw odometry (red) drifted off the map within a few steps, while the Bayes-filtered belief (blue) tracked the ground truth (green) closely throughout.
 
-![10_traj_Image](figures/10_lab/10_traj.png)
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/10_lab/10_bayes.mp4" type="video/mp4">
