@@ -105,7 +105,7 @@ For point 1, here is a video of my car running Bayes correctly and reaching some
 
 <div style="text-align: center;">
   <video width="640" height="480" controls>
-    <source src="/figures/11_lab/11_3e.mp4" type="video/mp4">
+    <source src="/figures/11_lab/11_3a.mp4" type="video/mp4">
   </video>
 </div>
 
