@@ -128,4 +128,3 @@ Similar to (5,-3) this position also had error due to the long corridor under it
 In this lab, I learned how what we used in ```Lab 7,9, and 10``` can be used to localize your robot in a given environment using the given beliefs and readings in the real world. I had some difficulty retuning my robot's PID according to the battery level and ensuring my readings were correct when passed to the Bayes, but after much, much effort eventually overcame it. I am excited to wrap this altogether into one cohesive bow with the Motion Planning test in ```Lab 12```
 
 [back](./)
-````
