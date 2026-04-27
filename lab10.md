@@ -7,7 +7,7 @@ In this lab, I used a Python simulation to localize a virtual robot in a 2D envi
 
 (No extensions used this lab)
 
-````Final Wordcount: 560```
+```Final Wordcount: 560```
 
 ## Localization and Bayes Filtering
 Robots, like our cars, need to infer position from sensors and control inputs due to their lack of knowledge of the environment. A Bayes filter helps perform this probabilistically by maintaining a belief over every possible pose and updating that belief as new information arrives. The state is `(x, y, θ)`, and the arena is discretized into a given `12x9x18` grid where each cell covers 1ft x 1ft x 20°.
