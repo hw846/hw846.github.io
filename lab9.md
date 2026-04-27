@@ -144,6 +144,9 @@ Following this test, however, my robot completely broke and wouldn't respond to 
 
 To circumvent this for the sake of this lab, I was given permission to use Maia Hirsch's data from her car while my robot is fixed in preparation for Lab 11/12. The remainder of the lab's post processing was done using this data (all work was done independently of one another).
 
+**POST MORTEM COMMENT: Proof of this working on my car and achieveing this goal can be seen here in [Lab 11]**(https://hw846.github.io/lab11.html)
+
+
 #### Merge and Plot your Readings
 Taking the data and using the matplotlib polar plotter, you can see below what the radial data from each location looked like:
 

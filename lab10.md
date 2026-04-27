@@ -97,7 +97,7 @@ Running the preplanned trajectory, the raw odometry (red) drifted off the map wi
 The filter is strongest near walls and corners, where the ToF readings return distinctive asymmetric range patterns. It weakens in open central regions of the environment where several candidate cells can produce nearly identical readings, so the belief stays diffuse and smears across 3 to 4 neighbors. Large pose jumps between timesteps also cause trouble: the `0.001` threshold in `prediction_step` can accidentally discard the previous cell if its prior belief was marginal, and the filter then needs a step or two of stronger sensor data to recover.
 
 ## Discussion
-In this lab, I learned how what we used in ```Lab 9``` can be used to localize your robot in a given environment using the given beliefs and readings. I had some difficulty understanding the actual Bayes concept, but after reading through other students websites (And watching some youtube videos) I understoof what it was asking for. I look forward to applying this again in Lab 11 to realistically use a Bayes Filter in the real world.
+In this lab, I learned how what we used in ```Lab 9``` can be used to localize your robot in a given environment using the given beliefs and readings. I had some difficulty understanding the actual Bayes concept, but after reading through other students websites (And watching some youtube videos) I understood what it was asking for. I look forward to applying this again in Lab 11 to realistically use a Bayes Filter in the real world.
 
 #### Reference
 I referred to Stephan Wagner's website for deciphering how the filter works.
