@@ -77,7 +77,7 @@ This leads me to my 2nd problem, where my battery drained very quickly leading t
   </video>
 </div>
 
-My final 3rd problem was my ToF sensors sometimes not reading data correctly. Because the Bayes Filter is dependent on these reading, the environment converge to a probability of 0.5 (which means you know really nothing about your system) and would state the robot was outside the world. In other instances, my ToF was too low pointing and lead the Bayes Filter to believe it was inside the top-right box in the environment. Shown below are examples of both of these instances:
+My final 3rd problem was my ToF sensors sometimes not reading data correctly. Because the Bayes Filter is dependent on these reading, the position would converge to a probability of 0.5 (which means you know nothing about your system) and would state the robot was outside the world due to the missing readings. In other instances, my ToF was too low pointing and lead the Bayes Filter to believe it was inside the top-right box in the environment. Shown below are examples of both of these instances:
 <div style="text-align: center;">
   <video width="640" height="480" controls>
     <source src="/figures/11_lab/11_2c.mp4" type="video/mp4">

@@ -21,6 +21,6 @@ At Rice, I served as a Robotics Research Assistant in the RobotPi Lab under the 
 | Lab 9       | [Link](./lab9.html) |
 | Lab 10      | [Link](./lab10.html) |
 | Lab 11      | [Link](./lab11.html) |
-| Lab 12      | N/A  |
+| Lab 12      | [Link](./lab12.html) |
 
 ![Image](assets/images/Headshot_Hayden_Webb.jpg)
